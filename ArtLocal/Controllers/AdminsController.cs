@@ -49,6 +49,8 @@ namespace ArtLocal.Controllers
           }
             var admin = await _dbContext.Admins.FindAsync(id);
 
+            var test = 0;
+
             if (admin == null)
             {
                 return NotFound();
